@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="index.js"></script>
+</head>    
+<body>
+    <!-- Product Card -->
+    <section class="product-1">
+        <div class="product-images">
+            <button id="main-img_btn" data-target="#modal1">
+                <img src="images/givenchy gentleman reserve privee edp 60ml.png" alt="">
+            </button>
+            <div class="secondary-images">
+                <button class="secondary-img_btn" data-target="#modal2">
+                    <img src="images/givenchy gentleman reserve privee edp 60ml open.png" alt="">
+                </button>
+                <button class="secondary-img_btn" data-target="#modal3">
+                    <img src="images/givenchy gentleman reserve privee edp 60ml with box.png" alt="">
+                </button>
+                <button class="secondary-img_btn" data-target="#modal4">
+                    <img src="images/Givenchy Gentleman Reserve Privee Eau de Parfum 60ml box only.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="product-title">
+            <h1>Givenchy Gentleman Reserve Privee Eau de Parfum <span>60ml</span></h1>
+        </div>
+        <div class="pricing-details">
+            <div class="pricing-text">
+                <h2 class="price">£75.00</h2>
+            <h3 class="availability">In stock <i class="fa-solid fa-circle-check"></i></h3>
+            </div>
+            <button id="add">Add to basket</button>
+        </div>
+    </div>
+<!-- This is Each Image modal -->
+    <div class="modal" id="modal1">
+        <div class="enlarged-image">
+            <img id="modal-image" src="images/givenchy gentleman reserve privee edp 60ml.png" alt="">
+        </div>
+        <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="enlarged-image">
+            <img id="modal-image" src="images/givenchy gentleman reserve privee edp 60ml open.png" alt="">
+        </div>
+        <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="enlarged-image">
+            <img id="modal-image" src="images/givenchy gentleman reserve privee edp 60ml with box.png" alt="">
+        </div>
+        <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="enlarged-image">
+            <img id="modal-image" src="images/Givenchy Gentleman Reserve Privee Eau de Parfum 60ml box only.png" alt="">
+        </div>
+        <button class="close-modal">&times;</button>
+    </div>
+
+<!-- Overlay for when each modal is opened -->
+    <div id="overlay"></div>
+</body>
+</html>
