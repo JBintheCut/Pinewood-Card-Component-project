@@ -90,11 +90,15 @@ body {
   text-align: center;
 }
 
-.product-title:hover {
+.product-title a {
+  color: black;
+  text-decoration: none;
+}
+.product-title a:hover {
   text-decoration: underline;
 }
 
-.product-title h1,
+.product-title a,
 span {
   cursor: pointer;
 }
